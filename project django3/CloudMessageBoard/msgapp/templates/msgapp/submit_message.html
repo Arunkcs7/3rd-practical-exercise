@@ -1,0 +1,20 @@
+<!-- msgapp/templates/msgapp/submit_message.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Message</title>
+</head>
+<body>
+    <h1>Submit Message</h1>
+    <form method="post" action="">
+        {% csrf_token %}
+        <label for="sender_name">Your Name:</label>
+        <input type="text" name="sender_name" required><br>
+        <label for="recipient_name">Recipient's Name:</label>
+        <input type="text" name="recipient_name" required><br>
+        <label for="content">Message:</label>
+        <textarea name="content" required></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

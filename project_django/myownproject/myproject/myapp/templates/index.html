@@ -1,0 +1,22 @@
+<!-- myapp/templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Page{% endblock %}</title>
+    {% block styles %}{% endblock %}
+</head>
+<body>
+    <header>
+        <h1>{% block header %}Welcome to My Page{% endblock %}</h1>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>{% block footer %}© 2024 My Page{% endblock %}</p>
+    </footer>
+    {% block scripts %}{% endblock %}
+</body>
+</html>
